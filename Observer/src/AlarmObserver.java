@@ -23,4 +23,8 @@ public class AlarmObserver implements Observer {
 
         alarmSubject.register(this);
     }
+
+    public void unregister(){
+        alarmSubject.unregister(this);
+    }
 }
