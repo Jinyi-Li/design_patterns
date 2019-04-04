@@ -10,7 +10,7 @@ public class DailyActivityFileMapper implements CsvFileMapper {
                 res.add(bean);
             }
         }catch(IOException e){
-            
+            // handle exception
         }
         return res;
     }
