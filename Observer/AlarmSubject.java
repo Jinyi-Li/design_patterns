@@ -2,7 +2,11 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.NoSuchElementException;
 
+/*
+    AlarmSubject is a "Subject" (the "Publisher") in Observer Pattern.
 
+    It provides methods to change temperature, wind power, and humidity and notify all updates to all observers. It maintains a list of observers.
+*/
 class AlarmSubject implements Subject {
 
     Set<Observer> observers;
