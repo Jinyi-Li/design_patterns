@@ -1,8 +1,14 @@
+/*
+    DailyActivityFileMapper is a simple CSV file mapper.
+
+    It demonstrates a kind of "Strategy".
+*/
 public class DailyActivityFileMapper implements CsvFileMapper {
+    
     @Override
     public List<ActivityBean> mapToBeans(File file){
-        List<ActivityBean> res = new ArrayList<>();
         
+        List<ActivityBean> res = new ArrayList<>();
         try(BufferedReader reader = new BufferedReader(new FileReader(file))){            
             String line;
             while((line = reader.readLine()) != null){

@@ -1,8 +1,14 @@
+/*
+    MonthlyActivityFileMapper is a simple CSV file mapper.
+
+    It demonstrates another kind of "Strategy".
+*/
 public class MonthlyActivityFileMapper implements CsvFileMapper {
-    @Override
+    
+    @Override    
     public List<ActivityBean> mapToBeans(File file){
-        List<ActivityBean> res = new ArrayList<>();
         
+        List<ActivityBean> res = new ArrayList<>();        
         try(BufferedReader reader = new BufferedReader(new FileReader(file))){            
             String line;
             while((line = reader.readLine()) != null){
