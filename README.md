@@ -2,7 +2,7 @@
 Summarize main design patterns with demonstrations in Java
 
 ## Strategy Pattern
-The strategy may vary in different sub-class objects and may be changed at run time.
+The strategy may vary in different sub-class objects and may be changed at run time. The idea is to decouple the options (the "strategies") from the whole business logic by interfaces. It's like you play with lego -- the strategies are just small pieces of legos; you can add or remove each part very easily.
 
 When to use?
 
@@ -23,7 +23,7 @@ When to use?
 4. It's OK for observers to receive (sometimes, too much) redundant, unrelated information, because all update will be sent to all observers with no difference.
 
 ## Factory Pattern
-A factory creates products in the same super-type but different sub-types based on requirements. 
+A factory creates products in the same super-type but different sub-types based on requirements. The idea is to create and return an instance for users while hiding the details of implementation! A user may call a static method and pass some arguments, then the factory will work to create and return that instance the user wants.
 
 When to use?
 
