@@ -30,3 +30,9 @@ When to use?
 1. You have some sub-classes from the same super-class.
 2. You want to create objects but don't know which sub-class you should use ahead of time. In other words, the class is chosen at run time.
 3. You want to encapsulate the selection of sub-classes.
+
+## Builder Pattern
+
+Builder would be most beneficial when you have many class members to configure in one Constructor method. When it goes up to more than 7 parameters, you don't want to overwhelm the caller by a crazy argument list. 
+
+Also, when you have too many configuration combinations, you want to keep your "construction" flexible. You can achieve flexibility by tons of overloaded Constructor methods. However, they, bearing the same name and similar argument lists, can be really confusing to a caller. A better alternative could be a Builder method.
