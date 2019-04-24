@@ -18,7 +18,7 @@ public class Recipe {
 	}
 
 	public static class RecipeBuilder {
-		private Recipe recipe;
+		
 
 		
 	}
