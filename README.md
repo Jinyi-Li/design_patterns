@@ -36,3 +36,7 @@ When to use?
 Builder would be most beneficial when you have many class members to configure in one Constructor method. When it goes up to more than 7 parameters, you don't want to overwhelm the caller by a crazy argument list. 
 
 Also, when you have too many configuration combinations, you want to keep your "construction" flexible. You can achieve flexibility by tons of overloaded Constructor methods. However, they, bearing the same name and similar argument lists, can be really confusing to a caller. A better alternative could be a Builder method.
+
+## Adapter Pattern
+
+We may use Adapter Pattern to tailor deprecated interfaces. You want to migrate to a new interface but instances are implementations of the obsolute one. How do you make the objects flexible enough to fit the new one?
